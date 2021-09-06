@@ -29,7 +29,7 @@
 .tabs:hover{
     cursor: pointer;
     color: #444;
-    transition: all .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .tabs.tabs.active:hover{
@@ -46,5 +46,17 @@
 
 .content.active{
     display: block;
+}
+
+@media screen and (max-width: 1024px){
+    .Tab{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Tab{
+        max-width: 425px;
+    }
 }
 

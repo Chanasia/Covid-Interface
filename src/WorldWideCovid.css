@@ -7,7 +7,7 @@
     border: 1px solid black
 }
 
-.WorldWideCovidBoard .label{
+.label{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,17 +104,39 @@
 .main-group .group.n2 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 .chart-pie{
     /* border: 1px solid black; */
     /* margin-top: 1rem; */
     border-radius: 10px;
-    padding: 1rem;
     max-width: 200px;
 }
 
 .popution{
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-group .group .span-inline{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .label.time{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-group{
+        grid-template-columns: 1fr;
+    }
+
+    .ChartWorldWideCovid, .retrospect-world-wide{
+        display: none;
+    }
 }

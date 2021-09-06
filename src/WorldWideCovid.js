@@ -121,7 +121,7 @@ function WorldWideCovidBoard() {
     return (
         <div className="WorldWideCovid">
             <div className="WorldWideCovidBoard">
-                <div className="label">
+                <div className="label time">
                     <h2>Worldwide Covid-19</h2>
                     <h2>{formatDate(date.getTime())}</h2>
                 </div>

@@ -152,27 +152,29 @@ function CountryCovid() {
                 <div className="label-choose-country">
                     เลือกประเทศ
                 </div>
-                <div className="autocomplete">
-                    <Autocomplete className="cp-complete" autoSelect options={country}
-                        onChange={(e, v) => {
-                            setSelectCountry(v)
-                        }}
-                        defaultValue={{ title: "Thailand", code: "TH", id: 201 }}
-                        getOptionLabel={(option) => option.title}
-                        renderInput={(params) => (
-                            <TextField {...params}
-                                variant="outlined"
-                                label=""
-                            />
-                        )}
-                    />
-                </div>
-                <div className={!selectCountry ? "flag-img hide" : "flag-img"}>
-                    <img src={!selectCountry ? "" : "https://www.countryflags.io/" + selectCountry.code + "/flat/64.png"} />
+                <div className="grid">
+                    <div className="autocomplete">
+                        <Autocomplete className="cp-complete" autoSelect options={country}
+                            onChange={(e, v) => {
+                                setSelectCountry(v)
+                            }}
+                            defaultValue={{ title: "Thailand", code: "TH", id: 201 }}
+                            getOptionLabel={(option) => option.title}
+                            renderInput={(params) => (
+                                <TextField {...params}
+                                    variant="outlined"
+                                    label=""
+                                />
+                            )}
+                        />
+                    </div>
+                    <div className={!selectCountry ? "flag-img hide" : "flag-img"}>
+                        <img src={!selectCountry ? "" : "https://www.countryflags.io/" + selectCountry.code + "/flat/64.png"} />
+                    </div>
                 </div>
             </div>
             <div className="CountryCovidBoard">
-                <div className="label">
+                <div className="label time">
                     <h2>Country Covid-19</h2>
                     <h2>{formatDate(date.getTime())}</h2>
                 </div>

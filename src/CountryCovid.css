@@ -3,8 +3,15 @@
 .ChooseCountry{
     font-family: 'Kanit', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr;
     border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.ChooseCountry .grid{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
     border-radius: 10px;
     padding: 1rem;
 }
@@ -72,4 +79,31 @@
     right: 1.5rem;
     padding: .5rem 1rem;
     border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px){
+    .label-choose-country{
+        justify-content: flex-start;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ChooseCountry{
+        grid-template-columns: 1fr;
+    }
+    .label-choose-country{
+        justify-content: center;
+        align-items: center;
+    }
+    .retrospect-country{
+        padding: .3rem .3rem;
+        top: .5rem;
+        right: .5rem;
+        display: none;
+    }
+
+    .ChartCountry{
+        display: none;
+    }
 }
