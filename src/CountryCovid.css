@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.ChooseCountry{
+    font-family: 'Kanit', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.CountryCovidBoard{
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.CountryCovidBoard .label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-choose-country{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.flag-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-img img{
+    width: 64px; 
+    height: 40px; 
+    object-fit: none;
+    border: 1px solid #999;
+}
+
+.flag-img.hide{
+    display: none;
+}
+
+.cp-complete{
+    width: 100%;
+}
+
+.autocomplete{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChartCountry{
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.retrospect-country{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: .5rem 1rem;
+    border: 1px solid black;
+}
